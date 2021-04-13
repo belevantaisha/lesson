@@ -17,7 +17,13 @@
 		padding: 20px;
 
 }
-	form input {
+	form input: not([type="checkbox","radio"])
+	{	
+		width: 100%
+	}
+
+	form label {
+		display: inline-block;
 		width: 100%
 	}
 
@@ -38,6 +44,27 @@
 		<p>
 			<label for="phone">Телефон</label>
 			<input id="phone" type="tel" name="phone" placeholder="Телефон"> 	
+		</p>
+		<p>
+			<label for="email">Электронная почта</label>
+			<input id="email" type="email" name="почта" placeholder="Электронная почта"> 
+		</p>
+		<p>
+			<label for="date">Дата рождения</label>
+			<input id="date" type="date" name="date" placeholder="Дата рождения">		
+		</p>
+		<p> 
+			<label for="checkbox">Фрукты</label>
+		<label for="checkbox1"><input id="checkbox1" type="checkbox" name="Фрукты" placeholder="Фрукты">Бананы</label> 
+		<label for="checkbox2"><input id="checkbox2" type="checkbox" name="Фрукты" placeholder="Фрукты">Апельсины</label>
+		<label for="checkbox3"><input id="checkbox3" type="checkbox" name="Фрукты" placeholder="Фрукты">Яблоки</label>  
+		</p>
+		<p> 
+			<label for="radio">Любимое время года</label>
+		<label for="radio1"><input id="radio1" type="radio" name="Время года" placeholder="Выбор"><img src="images/winter.png" alt="Зима"/></label> 
+		<label for="radio2"><input id="radio2" type="radio" name="Время года" placeholder="Выбор"><img src="images/spring.png" alt="Весна"/></label>
+		<label for="radio3"><input id="radio3" type="radio" name="Время года" placeholder="Выбор"><img src="images/summer.png" alt="Лето"/></label>  
+		<label for="radio4"><input id="radio4" type="radio" name="Время года" placeholder="Выбор"><img src="images/autumn.png" alt="Осень"/></label> 
 		</p>
 		<div>
 		<p>
